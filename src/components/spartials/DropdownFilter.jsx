@@ -4,7 +4,7 @@ const DropdownFilter = ({title, options, fun}) => {
  console.log(title);
   return (
 
-    <select defaultValue="0" onChange={fun} className='text-white bg-[#1F1E24] p-2 mr-8 border-zinc-400 w-[15vw] ' name='format' id='format'>
+    <select defaultValue="0" onChange={fun} className='text-zinc-400 bg-[#28262c] p-2 px-6 text-xl  mr-8 border-zinc-400 w-[15vw] rounded ' name='format' id='format'>
       <option  value={"0"} disabled> {title} </option>
       {
         options.map((o, i)=>(

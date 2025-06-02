@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import axios from "../utils/axios";
+import axios from "../../utils/axios";
 
 import { useEffect } from "react";
 export default function Sidebar() {
@@ -19,7 +19,7 @@ export default function Sidebar() {
       <nav className="text-zinc-400 flex flex-col mr-2">
         <h1 className=" text-xl  text-white  mt-4 mb-4 font-semibold"> New Feeds </h1>
 
-        <Link className="text-xl p-5 hover:bg-[#6556CD] hover:text-white hover:rounded-xl  "> <i className="ri-fire-fill m-1"></i>  Trending </Link>
+        <Link to={"/trending"} className="text-xl p-5 hover:bg-[#6556CD] hover:text-white hover:rounded-xl  "> <i className="ri-fire-fill m-1"></i>  Trending </Link>
         <Link className="text-xl p-5 hover:bg-[#6556CD] hover:text-white hover:rounded-xl  "> <i className="ri-sparkling-2-fill m-1"></i> Popular </Link>
         <Link className="text-xl p-5 hover:bg-[#6556CD] hover:text-white hover:rounded-xl  "> <i className="ri-video-ai-line m-1"></i> Movies </Link>
         <Link className="text-xl p-5 hover:bg-[#6556CD] hover:text-white hover:rounded-xl  "> <i className="ri-tv-line m-1"></i> Tv Show </Link>

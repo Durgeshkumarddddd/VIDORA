@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Sidebar from "./Sidebar";
-import Topbar from "./Topbar";
-import Header from "./Header";
+import Sidebar from "./spartials/Sidebar";
+import Topbar from "./spartials/Topbar";
+import Header from "./spartials/Header";
 import axios from "../utils/axios";
-import HorizontalCards from "./HorizontalCards";
-import DropdownFilter from "./DropdownFilter";
+import HorizontalCards from "./spartials/HorizontalCards";
+import DropdownFilter from "./spartials/DropdownFilter";
 
 export default function Home() {
     document.title = "New Movies Hub";
